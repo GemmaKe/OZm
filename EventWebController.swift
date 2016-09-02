@@ -1,25 +1,22 @@
 //
-//  ActivityWebViewController.swift
+//  EventWebController.swift
 //  OZ
 //
-//  Created by val on 19/08/2016.
+//  Created by Le Minh Tuan on 30/08/2016.
 //  Copyright © 2016 Qing. All rights reserved.
 //
 
 import UIKit
 
-class ActivityWebViewController: UIViewController {
-
+class EventWebController: UIViewController {
+    var chosenEvent:event?
     @IBOutlet var webView: UIWebView!
-    var url: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Load web with certain url
-        let webUrl = NSURL (string: url)
-        let requestObj = NSURLRequest(URL: webUrl!)
-        webView.loadRequest(requestObj)
-        self.view.addSubview(webView)
+        let URL = NSURL(string:(chosenEvent?.url)!)
+        webView.loadRequest(NSURLRequest(URL : URL!))
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +24,7 @@ class ActivityWebViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+
     /*
     // MARK: - Navigation
 

@@ -1,22 +1,16 @@
 //
-//  RecommendTableViewCell.swift
+//  EndTrackTableViewCell.swift
 //  OZ
 //
-//  Created by val on 15/08/2016.
+//  Created by val on 28/08/2016.
 //  Copyright © 2016 Qing. All rights reserved.
 //
 
 import UIKit
 
-class RecommendTableViewCell: UITableViewCell {
-    @IBOutlet var rcmdTitle: UILabel!
-    @IBOutlet var rcmdImage: UIImageView!
-    @IBOutlet var rcmdDesc: UILabel!
-    @IBOutlet var star1: UIImageView!
-    @IBOutlet var star2: UIImageView!
-    @IBOutlet var star3: UIImageView!
-    
-    
+class EndTrackTableViewCell: UITableViewCell {
+
+    @IBOutlet var amountLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

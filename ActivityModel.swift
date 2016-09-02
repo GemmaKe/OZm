@@ -13,14 +13,15 @@ class ActivityModel: NSObject {
     
     var title: String?
 //    var address: String?
-//    var latitude: String?
-//    var longitude: String?
+    var lat: Double?
+    var lng: Double?
     var type: String?
     var picture: String?
 //    var transport: String?
 //    var reason: String?
     var desc: String?
     var other: String?
+    var star: Int?
     
     //empty constructor
     
@@ -31,12 +32,15 @@ class ActivityModel: NSObject {
     
     //construct with @name, @address, @latitude, and @longitude parameters
     
-    init(title: String, picture: String, desc: String, other: String, type: String) {
+    init(title: String, picture: String, desc: String, other: String, type: String, lat: Double, lng: Double, star: Int) {
         self.title = title
         self.picture = picture
         self.desc = desc
         self.other = other
         self.type = type
+        self.lat = lat
+        self.lng = lng
+        self.star = star
     }
     
     
