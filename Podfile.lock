@@ -1,0 +1,15 @@
+PODS:
+  - BFPaperTabBarController (2.2.5)
+  - ImageLoader (0.9.0)
+
+DEPENDENCIES:
+  - BFPaperTabBarController
+  - ImageLoader
+
+SPEC CHECKSUMS:
+  BFPaperTabBarController: 0fe08fb7770d1f05f7508da5de44308bafcb9f10
+  ImageLoader: bb709e5b2708158da405760f42c75e7e52b561b5
+
+PODFILE CHECKSUM: 3d4028c6eeec2d9d30210f9ce1bd96a854f2fc9b
+
+COCOAPODS: 1.0.1
